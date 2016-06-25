@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-auto> 
+   <vaadin-horizontal-split-panel width="930px" height="520px"> 
+    <vaadin-vertical-layout spacing width="450px" height="500px" margin> 
+     <vaadin-horizontal-layout spacing> 
+      <vaadin-text-field caption="Name" _id="name"></vaadin-text-field> 
+      <vaadin-text-field caption="Nachname" _id="surname"></vaadin-text-field> 
+     </vaadin-horizontal-layout> 
+     <vaadin-horizontal-layout spacing> 
+      <vaadin-date-field caption="Geburtstag" _id="birthday"></vaadin-date-field> 
+      <vaadin-combo-box caption="Geschlecht" item-caption-mode="id" _id="gender"> 
+       <option>Option 1</option> 
+       <option>Option 2</option> 
+       <option>Option 3</option> 
+      </vaadin-combo-box> 
+     </vaadin-horizontal-layout> 
+     <vaadin-text-field caption="Telefonnummer" _id="phone"></vaadin-text-field> 
+     <vaadin-horizontal-layout caption="Betreuungsbeginn" spacing> 
+      <vaadin-text-field caption="Monat" _id="month"></vaadin-text-field> 
+      <vaadin-text-field caption="Jahr" _id="year"></vaadin-text-field> 
+     </vaadin-horizontal-layout> 
+     <vaadin-horizontal-layout caption="Betreuung" spacing> 
+      <vaadin-combo-box caption="Stunden" item-caption-mode="id" _id="hours"> 
+       <option>Option 1</option> 
+       <option>Option 2</option> 
+       <option>Option 3</option> 
+      </vaadin-combo-box> 
+      <vaadin-combo-box caption="Wochentage" item-caption-mode="id" _id="weekdays"> 
+       <option>Option 1</option> 
+       <option>Option 2</option> 
+       <option>Option 3</option> 
+      </vaadin-combo-box> 
+     </vaadin-horizontal-layout> 
+    </vaadin-vertical-layout> 
+    <vaadin-vertical-layout spacing width="450px" height="500px" margin> 
+     <vaadin-text-field caption="Eltern" _id="parents"></vaadin-text-field> 
+     <vaadin-text-field caption="E-Mail" _id="mail"></vaadin-text-field> 
+     <vaadin-horizontal-layout spacing> 
+      <vaadin-text-field caption="Straße" _id="street"></vaadin-text-field> 
+      <vaadin-text-field caption="Hausnummer" _id="housenumber"></vaadin-text-field> 
+     </vaadin-horizontal-layout> 
+     <vaadin-horizontal-layout spacing> 
+      <vaadin-text-field caption="PLZ" _id="postcode"></vaadin-text-field> 
+      <vaadin-text-field caption="Stadt" _id="city"></vaadin-text-field> 
+     </vaadin-horizontal-layout> 
+     <vaadin-combo-box caption="Kind Aufnehmen" item-caption-mode="id" _id="acceptChild"> 
+      <option>Option 1</option> 
+      <option>Option 2</option> 
+      <option>Option 3</option> 
+     </vaadin-combo-box> 
+    </vaadin-vertical-layout> 
+   </vaadin-horizontal-split-panel> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

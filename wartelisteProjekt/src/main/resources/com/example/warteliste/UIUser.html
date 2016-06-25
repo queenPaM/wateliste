@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout spacing responsive width="600px" margin> 
+   <vaadin-vertical-layout spacing width="425px" margin-right margin-bottom> 
+    <vaadin-label responsive size-auto plain-text>
+      Kind Suchen 
+    </vaadin-label> 
+    <vaadin-text-field caption="Name" width-full _id="name" :expand></vaadin-text-field> 
+    <vaadin-horizontal-layout spacing responsive width-full> 
+     <vaadin-popup-date-field caption="Geburtstag" responsive _id="birthday"></vaadin-popup-date-field> 
+     <vaadin-text-field caption="Alter" responsive _id="age"></vaadin-text-field> 
+    </vaadin-horizontal-layout> 
+    <vaadin-label responsive size-auto plain-text>
+      Betreuungsbeginn 
+    </vaadin-label> 
+    <vaadin-horizontal-layout spacing responsive width-full> 
+     <vaadin-text-field caption="Monat" responsive _id="moth"></vaadin-text-field> 
+     <vaadin-text-field caption="Jahr" responsive _id="year"></vaadin-text-field> 
+    </vaadin-horizontal-layout> 
+    <vaadin-horizontal-layout spacing responsive width-full> 
+     <vaadin-option-group caption="Geschlecht" item-caption-mode="id" _id="gender"></vaadin-option-group> 
+     <vaadin-option-group caption="Angenommen?" item-caption-mode="id" _id="accepted"></vaadin-option-group> 
+    </vaadin-horizontal-layout> 
+    <vaadin-button style-name="friendly" responsive plain-text _id="suche" :right>
+      Suche 
+    </vaadin-button> 
+   </vaadin-vertical-layout> 
+   <vaadin-grid caption="Suchergebniss" width="500px" _id="kindListe"></vaadin-grid> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>
